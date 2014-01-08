@@ -1,0 +1,7 @@
+StrictHostKeyChecking=no
+
+Host callnix.sec
+Port 22191
+
+Host universe.sugarbase.net
+Port 1194
