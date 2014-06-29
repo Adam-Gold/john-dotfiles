@@ -1,8 +1,12 @@
 MODKEY=Mod4
-
 conky &
 glipper &
-setxkbmap -option grp:alt_shift_toggle,grp_led:scroll us,il &
+#/usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service &
+#/usr/bin/indicator-sound-switcher &
+dropbox start -i
+~/.screenlayout/MyScreen.sh
+/home/adamb/.setxkblayout
+#trayer --edge top --widthtype request --align right --padding 5 --height 16 --transparent true
 
 WMII_FOCUSCOLORS='#ffffff #285577 #4C7899'
 WMII_BACKGROUND='#333333'

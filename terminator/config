@@ -1,0 +1,35 @@
+[global_config]
+  handle_size = 1
+  enabled_plugins = InactivityWatch, CustomCommandsMenu, ActivityWatch, LaunchpadCodeURLHandler, APTURLHandler, MavenPluginURLHandler, LaunchpadBugURLHandler
+  close_button_on_tab = False
+  title_inactive_fg_color = "#cecece"
+  title_transmit_bg_color = "#133ba4"
+  title_inactive_bg_color = "#000000"
+[keybindings]
+  go_left = <Alt>h
+  go_down = <Alt>j
+  reset_clear = <Ctrl><Shift>l
+  go_right = <Alt>l
+  go_up = <Alt>k
+[profiles]
+  [[default]]
+    scrollbar_position = hidden
+    use_system_font = False
+    font = Monospace 10
+    background_darkness = 0.81
+    background_type = transparent
+    background_image = None
+    cursor_color = "#d4d4d4"
+    foreground_color = "#ffffff"
+    copy_on_selection = True
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
