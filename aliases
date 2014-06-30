@@ -1,26 +1,35 @@
 alias vi='vim'
+alias cdc='cd /home/adamb/code/commpeak'
+alias cdn='cd /home/adamb/code/netvertise'
 alias ll='ls -l --color=always'
 alias lll='ls -lh --color=always'
 alias sshr='ssh -l root'
 alias sshc='ssh -l callnix'
 alias sshu='ssh -l ubuntu'
-alias ssha='ssh -l adamb'
+alias sshj='ssh -l john'
 alias scpr='scp -r'
 alias scpresume='rsync --partial --progress -ae ssh'
 alias hosts='sudo vi /etc/hosts'
 alias gf='git flow'
 alias realias='$EDITOR ~/.aliases; source ~/.aliases'
 alias git-archive-here='git archive --format=tar HEAD | gzip'
-alias dix='dig -x'
 alias pod=perldoc
 alias feature='git flow feature'
 alias release='git flow release'
 alias sshd='ssh adamb@deploy'
 alias sshv='ssh adamb@10.50.0.2'
+alias sshn='ssh root@10.4.0.4'
+alias sshnb='ssh root@10.4.0.35'
 alias sshrates='ssh adamb@212.179.150.88'
+alias sshwork='ssh john@10.200.10.188'
+alias ssho='ssh adamb@officenag'
 alias ack='ack-grep'
+alias dix='dig -x'
 alias makepassword64='apg -n 3 -m 64 -x 64 -M LC -E 0123456789 -E \!\@\#\$\%\^\&\*\(\)\_\-\+\=\.'
 alias makepassword16='apg -n 1 -m 16 -x 16 -M LC -E 0123456789 -E \!\@\#\$\%\^\&\*\(\)\_\-\+\=\.'
+alias makepassword8='apg -a 1 -n 1 -m 8 -x 8 -E \!\@\#\$\%\^\&\*\(\)\_\-\+\=\.'
+alias cnagios='ssh root@10.4.0.4 /root/create_nagios.sh'
+alias crpaf='ssh root@10.4.0.4 /root/create_rpaf.pl'
 
 # these are from Yuval Kogman
 alias ts="prove --state=slow,save -j3 -r"
@@ -36,3 +45,8 @@ alias go='git co'
 alias gb='git br'
 alias gc='git ci'
 
+highssh() {
+    ssh -l root $1.highland.local
+}
+
+alias sshh=highssh
