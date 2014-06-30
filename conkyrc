@@ -7,14 +7,15 @@ out_to_stderr no
 extra_newline no
 uppercase no
 use_spacer none
-overwrite_file /home/john/.conky.tmp
+overwrite_file /home/adamb/.conky.tmp
 
 TEXT
 
 [${execi 0.1 xkblayout-state print %s}] \
 | Uptime: $uptime_short \
+| Battery: ${battery_percent BAT0}%
 | RAM: ${memperc}% \
 | ${loadavg} \
 | CPU Temp: ${hwmon temp 1}°C \
-| vlan6br: [${color3}${addr vlan6br}${color1}]: Up:${color} ${upspeed vlan6br}${color1} - Down:${color} ${downspeed vlan6br} \
+| eth0: [${color3}${addr eth0}${color1}]: Up:${color} ${upspeed eth0}${color1} - Down:${color} ${downspeed eth0} \
 | ${time %a %b %d %H:%M}
