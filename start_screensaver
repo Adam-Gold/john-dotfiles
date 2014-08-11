@@ -1,0 +1,6 @@
+#!/bin/sh
+cinnamon-screensaver-command --lock
+sleep 60
+xset dpms force off
+exit
+#xscreensaver-command -lock
