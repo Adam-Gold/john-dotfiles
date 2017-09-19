@@ -1,10 +1,7 @@
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
-filetype plugin indent on
-syntax on
 set background=light
-call pathogen#infect()
 
 " Convert tabs to spaces, use 4 spaces (in tab jump and shift)
 set ts=4

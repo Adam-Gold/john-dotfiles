@@ -1,28 +1,39 @@
 alias vi='vim'
-alias ll='ls -l --color=always'
-alias lll='ls -lh --color=always'
+alias ll='ls -lG'
+alias lll='ls -lGh'
+alias rscp='rsync -a --info=progress2'
+alias rsmv='rsync -a --info=progress2 --remove-source-files'
 alias sshr='ssh -l root'
+alias sshc='ssh -l centos'
 alias sshu='ssh -l ubuntu'
+alias sshv='ssh -i ~/.ssh/vagrant_id_rsa -l vagrant'
+alias ssh3='ssh -i ~/.ssh/3iuser_id_rsa -l 3i-user'
+alias sshsls='ssh -i ~/.ssh/3iMIND_Sales_environment.pem -l centos'
+alias sshec2='ssh -i ~/.ssh/3iMIND_Sales_environment.pem -l ec2-user'
+alias sshomadmin='ssh -i ~/.ssh/omadmin_id_rsa -l omadmin'
+alias sshthor='ssh -i ~/.ssh/omadmin_id_rsa -l centos'
+alias sshmes='ssh -i ~/.ssh/ommes-us-east.pem -l centos'
+alias sshny='ssh -i ~/.ssh/terraform-fashionweek-PASSWORDLESS.pem -l ec2-user'
 alias scpr='scp -r'
 alias scpresume='rsync --partial --progress -ae ssh'
 alias hosts='sudo vi /etc/hosts'
 alias gf='git flow'
 alias realias='$EDITOR ~/.aliases; source ~/.aliases'
 alias git-archive-here='git archive --format=tar HEAD | gzip'
-alias pod=perldoc
 alias feature='git flow feature'
 alias release='git flow release'
-alias ack='ack-grep'
 alias dix='dig -x'
-alias makepassword64='apg -n 3 -m 64 -x 64 -M LC -E 0123456789 -E \!\@\#\$\%\^\&\*\(\)\_\-\+\=\.'
-alias makepassword16='apg -n 1 -m 16 -x 16 -M LC -E 0123456789 -E \!\@\#\$\%\^\&\*\(\)\_\-\+\=\.'
-alias makepassword8='apg -a 1 -n 1 -m 8 -x 8 -E \!\@\#\$\%\^\&\*\(\)\_\-\+\=\.'
-alias cnagios='ssh root@10.4.0.4 /root/create_nagios.sh'
-alias crpaf='ssh root@10.4.0.4 /root/create_rpaf.pl'
+alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # these are from Yuval Kogman
 alias ts="prove --state=slow,save -j3 -r"
 alias tf="prove --state=failed,save -v -r"
+
+# Show Hidden files in Finder
+alias finder_s='defaults write com.apple.Finder AppleShowAllFiles TRUE; killAll Finder'
+
+# Hide Hidden files in Finder
+alias finder_h='defaults write com.apple.Finder AppleShowAllFiles FALSE; killAll Finder'
 
 alias ps?='ps -ef | grep'
 alias s='sudo'
@@ -30,6 +41,6 @@ alias s='sudo'
 # git
 alias gs='git status'
 alias gd='git df'
-alias go='git co'
+#alias go='git co'
 alias gb='git br'
 alias gc='git ci'

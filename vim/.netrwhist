@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/abalali/code/agt/platform/route53-kubernetes'
+let g:netrw_dirhist_2='/Users/abalali/.ssh'
+let g:netrw_dirhist_3='/Users/abalali/Library/Caches/PyCharmCE2017.1/index/filetypes'

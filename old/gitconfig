@@ -1,6 +1,6 @@
-[user]
-    email = adambalali@gmail.com
-	name = Adam Balali
+#[user]
+#    email = adambalali@cpan.org
+#    name  = Adam Balali
 
 [alias]
     st   = status
@@ -37,13 +37,3 @@
 
 [core]
 	editor = vim
-	autocrlf = input
-	excludesfile = /Users/abalali/.gitignore_global
-[push]
-	default = matching
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
