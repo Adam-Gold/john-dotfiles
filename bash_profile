@@ -109,7 +109,7 @@ extract () {
 # http://www.wunderground.com/weather/api/d/login.html
 # to get an API key
 weather() {
-    key=862d2aadcb7f2dc1
+    key=
     echo Tel Aviv:
     echo ''
     data=$(curl -s "http://api.wunderground.com/api/$key/forecast/q/israel/Tel_Aviv.json" | jq -r ['.forecast.txt_forecast.forecastday[] | [.title], [.fcttext], ["break"] | .[]'])
